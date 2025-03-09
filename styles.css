@@ -1,11 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +16,8 @@ body {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -48,29 +43,33 @@ button {
     cursor: pointer;
 }
 
-button.facebook-login {
-    background: #4267B2;
+.facebook-login {
+    background: none;
+    color: #385185;
+    font-weight: bold;
 }
 
 .separator {
     margin: 10px 0;
-    font-weight: bold;
     color: #8e8e8e;
+    font-weight: bold;
 }
 
 .forgot-password {
     display: block;
     margin-top: 10px;
+    font-size: 12px;
     color: #00376b;
-    text-decoration: none;
 }
 
 .signup-box {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 14px;
     border: 1px solid #dbdbdb;
     background: #fff;
 }
+
 
 .signup-box a {
     color: #0095f6;
