@@ -1,7 +1,7 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
 
-    // Get username
+    // Get username input value
     let username = document.getElementById("username").value;
 
     // Show profile section
@@ -11,4 +11,3 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     // Hide login form
     document.querySelector(".login-container").style.display = "none";
 });
-
