@@ -80,3 +80,16 @@ button {
     color: #0095f6;
     text-decoration: none;
 }
+.profile-container {
+    display: none; /* Hidden initially */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #0095f6;
+    margin-top: 10px;
+}
