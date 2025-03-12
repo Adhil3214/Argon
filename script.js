@@ -1,13 +1,18 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
+document.querySelector(".login-form").addEventListener("submit", function(event) {
+    event.preventDefault();  // Stop the default form submission
 
-    // Get username input value
-    let username = document.getElementById("username").value;
+    // Get input values
+    let username = document.querySelector("input[type='text']").value;
+    let password = document.querySelector("input[type='password']").value;
 
-    // Show profile section
-    document.getElementById("profileContainer").style.display = "block";
-    document.getElementById("userNameDisplay").innerText = username;
-
-    // Hide login form
-    document.querySelector(".login-container").style.display = "none";
+    // Check if both fields are filled
+    if (username && password) {
+        // Save user info (Optional)
+        localStorage.setItem("user", username);
+        
+        // Redirect to another page
+        window.location.href = "dashboard.html";  // Change this to your target page
+    } else {
+        alert("Please enter both username and password.");
+    }
 });
