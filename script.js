@@ -1,18 +1,14 @@
-document.querySelector(".login-form").addEventListener("submit", function(event) {
-    event.preventDefault();  // Stop the default form submission
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.querySelector(".login-form");
 
-    // Get input values
-    let username = document.querySelector("input[type='text']").value;
-    let password = document.querySelector("input[type='password']").value;
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent actual form submission
 
-    // Check if both fields are filled
-    if (username && password) {
-        // Save user info (Optional)
-        localStorage.setItem("user", username);
-        
-        // Redirect to another page
-        window.location.href = "dashboard.html";  // Change this to your target page
-    } else {
-        alert("Please enter both username and password.");
-    }
+        const username = loginForm.querySelector('input[type="text"]').value;
+        const password = loginForm.querySelector('input[type="password"]').value;
+
+        console.log("Username:", username);
+        console.log("Password:", password);
+    });
 });
+
